@@ -1,0 +1,10 @@
+<ul ng-repeat="book in books">
+  <li>
+    <a ng-href="#book-detail/{{ book.id }}">{{ book.name }}</a>
+    <img ng-src="{{ book.cover }}">
+    <p><strong>{{ book.author.name }}</strong></p>
+    <dl>
+      <dt>Votes:</dt><dd>{{ book.likes }}</dd>
+      <dt>Publish date:</dt><dd>{{ book.published|date }}</dd>
+  </li>
+</ul>
