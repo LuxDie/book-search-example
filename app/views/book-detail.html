@@ -7,4 +7,12 @@
   <dt>Publish date:</dt><dd>{{ book.published|date }}</dd>
   </dl>
   <p ng-repeat="intro in book.introduction">{{ intro.content }}</p>
+  <div>
+    <h2>Similar reading</h2>
+    <ul>
+      <li ng-repeat="item in reccomended">
+        <book-list-item></book-list-item>
+      </li>
+    </ul>
+  </div>
 </div>
