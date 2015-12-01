@@ -1,7 +1,7 @@
 <div class="book-list-item">
-  <a ng-href="#book-detail/{{ item.id }}">{{ item.name }}</a>
   <img ng-src="{{ item.cover }}">
-  <p><strong>{{ item.author.name }}</strong></p>
+  <a ng-href="#book-detail/{{ item.id }}">{{ item.name }}</a>
+  <p>By {{ item.author.name }}</p>
   <dl>
     <dt>Votes:</dt><dd>{{ item.likes }}</dd>
     <dt>Publish date:</dt><dd>{{ item.published|date }}</dd>
