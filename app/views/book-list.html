@@ -1,5 +1,14 @@
+<p>Find me the best
+  <select ng-model="search.category" ng-options="category for category in categories | orderBy:category">
+    <option value=""></option>
+  </select>
+  books about
+  <select ng-model="search.genre" ng-options="genre for genre in genres | orderBy:genre">
+    <option value=""></option>
+  </select>
+  <input type="text" ng-model="search.name" placeholder="Search books"></p>
 <ul>
-  <li ng-repeat="item in books">
+  <li ng-repeat="item in books | bookSearch:search">
     <book-list-item></book-list-item>
   </li>
 </ul>

@@ -11,6 +11,6 @@ angular.module('reedsyTestGruntApp')
     return {
       templateUrl: 'views/book-list-item.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {}
+      link: function postLink() {}
     };
   });

@@ -1,14 +1,20 @@
 <div>
   <h2>{{ book.name }}</h2>
   <img ng-src="{{ book.cover }}">
-  <p><strong><img ng-src="{{ book.author.avatar }}"> {{ book.author.name }}</strong></p>
+  <p>{{ book.description }}</p>
+  <p>Written by <strong><img ng-src="{{ book.author.avatar }}"> {{ book.author.name }}</strong></p>
   <dl>
   <dt>Votes:</dt><dd>{{ book.likes }}</dd>
   <dt>Publish date:</dt><dd>{{ book.published|date }}</dd>
   </dl>
+  <p>Categories:</p>
+  <ul>
+    <li ng-repeat="cat in categories">cat.name</li>
+  </ul>
+  <h3>Introduction</h3>
   <p ng-repeat="intro in book.introduction">{{ intro.content }}</p>
   <div>
-    <h2>Similar reading</h2>
+    <h3>Similar reading</h3>
     <ul>
       <li ng-repeat="item in reccomended">
         <book-list-item></book-list-item>
