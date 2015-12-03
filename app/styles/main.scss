@@ -90,6 +90,20 @@ body {
   }
 }
 
-book-list-item img {
-  height: 100px;
+.book-list-item {
+  img {
+    width: 200px;
+  }
+
+  .caption {
+    height: 270px;
+  }
+}
+
+#search-panel {
+  margin-bottom: 30px;
+}
+
+.list-columns {
+  list-style: none;
 }

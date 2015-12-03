@@ -1,9 +1,13 @@
 <div class="book-list-item">
-  <img ng-src="{{ item.cover }}">
-  <a ng-href="#book-detail/{{ item.id }}">{{ item.name }}</a>
-  <p>By {{ item.author.name }}</p>
-  <dl>
-    <dt>Votes:</dt><dd>{{ item.likes }}</dd>
-    <dt>Publish date:</dt><dd>{{ item.published|date }}</dd>
-  </dl>
+  <a ng-href="#book-detail/{{ item.id }}" class="thumbnail">
+    <img ng-src="{{ item.cover }}">
+    <div class="caption">
+      <h3>{{ item.name }}</h3>
+      <p>By {{ item.author.name }}</p>
+      <dl>
+        <dt>Votes:</dt><dd>{{ item.likes }}</dd>
+        <dt>Publish date:</dt><dd>{{ item.published|date }}</dd>
+      </dl>
+    </div>
+    </a>
 </div>

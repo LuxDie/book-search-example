@@ -15,8 +15,8 @@
   <p ng-repeat="intro in book.introduction">{{ intro.content }}</p>
   <div>
     <h3>Similar reading</h3>
-    <ul>
-      <li ng-repeat="item in reccomended">
+    <ul class="list-columns">
+      <li class="col-sm-6 col-md-4" ng-repeat="item in reccomended">
         <book-list-item></book-list-item>
       </li>
     </ul>

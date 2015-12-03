@@ -21,7 +21,7 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+      <div class="navbar navbar-default" role="navigation" reedsy-navbar>
         <div class="container">
           <div class="navbar-header">
 
@@ -32,14 +32,13 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">reedsyTestGrunt</a>
+            <a class="navbar-brand" href="#/">LuxDie's Test for Reedsy</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/book-list">List</a></li>
+              <li><a ng-href="#/book-list" ng-show="showListBtn()">Back to list</a></li>
             </ul>
           </div>
         </div>
@@ -90,6 +89,7 @@
         <script src="scripts/directives/book-list-item.js"></script>
         <script src="scripts/filters/book-search.js"></script>
         <script src="scripts/filters/unique.js"></script>
+        <script src="scripts/directives/reedsy-navbar.js"></script>
         <!-- endbuild -->
 </body>
 </html>
