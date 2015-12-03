@@ -8,8 +8,8 @@
  * Controller of the reedsyTestGruntApp
  */
 angular.module('reedsyTestGruntApp')
-  .controller('BookListCtrl', function ($scope, $http, uniqueFilter) {
-    $http.get('scripts/book.json').then((response) => {
+  .controller('BookListCtrl', function ($scope, data, uniqueFilter) {
+    data.getBookList().then((response) => {
       $scope.books = response.data;
       $scope.categories = uniqueFilter($scope.books.map((el) => {
         return el.genre.category;

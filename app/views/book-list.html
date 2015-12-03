@@ -17,10 +17,11 @@
 </div>
 
 <ul class="list-columns">
-  <li class="col-sm-6 col-md-4" dir-paginate="item in books | bookSearch:search | itemsPerPage: 6">
+  <li class="col-sm-6 col-md-4" dir-paginate="item in books | bookSearch:search | itemsPerPage: 6 as results">
     <book-list-item></book-list-item>
   </li>
 </ul>
+<p ng-if="!results.length" class="animate-repeat">No books were found for your search terms.</p>
 
 <div id="pagination-panel">
   <dir-pagination-controls></dir-pagination-controls>

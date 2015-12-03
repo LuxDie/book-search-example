@@ -8,8 +8,8 @@
  * Controller of the reedsyTestGruntApp
  */
 angular.module('reedsyTestGruntApp')
-  .controller('BookDetailCtrl', function ($scope, $http, $routeParams) {
-    $http.get('scripts/book.json').then(response => {
+  .controller('BookDetailCtrl', function ($scope, $routeParams, data) {
+    data.getBookList().then(response => {
       let book = response.data.find(el => { return el.id === $routeParams.id; });
       $scope.book = book;
       $scope.reccomended = response.data.filter(el => {
