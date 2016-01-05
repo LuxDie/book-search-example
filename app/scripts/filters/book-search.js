@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc filter
- * @name reedsyTestGruntApp.filter:bookSearch
+ * @name bookSearch.filter:bookSearch
  * @function
  * @description
  * # bookSearch
- * Filter in the reedsyTestGruntApp.
+ * Filter in the bookSearch.
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .filter('bookSearch', function () {
     return function (input, params) {
       if (!input) { return []; }

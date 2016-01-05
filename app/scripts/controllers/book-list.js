@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name reedsyTestGruntApp.controller:BookListCtrl
+ * @name bookSearch.controller:BookListCtrl
  * @description
  * # BookListCtrl
- * Controller of the reedsyTestGruntApp
+ * Controller of the bookSearch
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .controller('BookListCtrl', function ($scope, data, uniqueFilter) {
     data.getBookList().then((response) => {
       $scope.books = response.data;

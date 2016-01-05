@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name reedsyTestGruntApp.data
+ * @name bookSearch.data
  * @description
  * # data
- * Service in the reedsyTestGruntApp.
+ * Service in the bookSearch.
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .service('data', function ($http) {
 
   	let url = 'scripts/book.json';

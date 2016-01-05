@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name reedsyTestGruntApp.directive:reedsyNavbar
+ * @name bookSearch.directive:reedsyNavbar
  * @description
  * # reedsyNavbar
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .directive('reedsyNavbar', function ($location) {
     return {
       restrict: 'A',

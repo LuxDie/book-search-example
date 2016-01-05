@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc filter
- * @name reedsyTestGruntApp.filter:unique
+ * @name bookSearch.filter:unique
  * @function
  * @description
  * # unique
- * Filter in the reedsyTestGruntApp.
+ * Filter in the bookSearch.
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .filter('unique', function () {
     return function (input) {
       if (!input) { return []; }

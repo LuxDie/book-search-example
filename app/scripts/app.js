@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name reedsyTestGruntApp
+ * @name bookSearch
  * @description
- * # reedsyTestGruntApp
+ * # bookSearch
  *
  * Main module of the application.
  */
 angular
-  .module('reedsyTestGruntApp', [
+  .module('bookSearch', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

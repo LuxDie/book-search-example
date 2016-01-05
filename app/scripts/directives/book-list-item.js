@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name reedsyTestGruntApp.directive:bookListItem
+ * @name bookSearch.directive:bookListItem
  * @description
  * # bookListItem
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .directive('bookListItem', function () {
     return {
       templateUrl: 'views/book-list-item.html',

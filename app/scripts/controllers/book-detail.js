@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name reedsyTestGruntApp.controller:BookDetailCtrl
+ * @name bookSearch.controller:BookDetailCtrl
  * @description
  * # BookDetailCtrl
- * Controller of the reedsyTestGruntApp
+ * Controller of the bookSearch
  */
-angular.module('reedsyTestGruntApp')
+angular.module('bookSearch')
   .controller('BookDetailCtrl', function ($scope, $routeParams, data) {
     data.getBookList().then(response => {
       let book = response.data.find(el => { return el.id === $routeParams.id; });
